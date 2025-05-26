@@ -1,4 +1,4 @@
-// Problem Name : Area of a Circle
+// Problem Name : Digits Summation
 //Course Title : Competitive Programming Sessional
 //Course Code : CCE-2310
 //Course Teacher Name : Mirza Raquib
@@ -7,7 +7,8 @@
 using namespace std;
 int main()
 {
-    double r;
-    cin>>r;
-    cout<<fixed<<setprecision(9)<<3.141592653*r*r<<endl;
- }
+    long long a,b;
+    cin>>a>>b;
+    long long ans=a%10+b%10;
+    cout<<ans<<endl;
+}

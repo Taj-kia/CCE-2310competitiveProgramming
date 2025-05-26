@@ -1,4 +1,4 @@
-// Problem Name : Area of a Circle
+// Problem Name : The Brothers
 //Course Title : Competitive Programming Sessional
 //Course Code : CCE-2310
 //Course Teacher Name : Mirza Raquib
@@ -7,7 +7,11 @@
 using namespace std;
 int main()
 {
-    double r;
-    cin>>r;
-    cout<<fixed<<setprecision(9)<<3.141592653*r*r<<endl;
- }
+    string f1,s1,f2,s2;
+    cin>>f1>>s1>>f2>>s2;
+    if(s1==s2)
+    cout<<"ARE Brothers"<<endl;
+    else
+    cout<<"NOT"<<endl;
+    return 0;
+}

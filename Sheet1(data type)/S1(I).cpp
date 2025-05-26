@@ -1,4 +1,4 @@
-// Problem Name : Area of a Circle
+// Problem Name : Welcome for you with Conditions
 //Course Title : Competitive Programming Sessional
 //Course Code : CCE-2310
 //Course Teacher Name : Mirza Raquib
@@ -7,7 +7,12 @@
 using namespace std;
 int main()
 {
-    double r;
-    cin>>r;
-    cout<<fixed<<setprecision(9)<<3.141592653*r*r<<endl;
- }
+    long long int a,b;
+    cin>>a>>b;
+    if(a>=b)
+
+        cout<<"Yes"<<endl;
+        else
+            cout<<"No"<<endl;
+
+}
