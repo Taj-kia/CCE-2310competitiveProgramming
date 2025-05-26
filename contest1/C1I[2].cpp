@@ -1,17 +1,10 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int N;
-    cin >> N;
-    int tens = N / 10;
-    int units = N % 10;
-
-    if ((tens != 0 && units % tens == 0) || (units != 0 && tens % units == 0)) {
-        cout << "YES" << endl;
-    } else {
-        cout << "NO" << endl;
-    }
-
+    char C;
+    cin >> C;
+    char nextChar = (C == 'z') ? 'a' : static_cast<char>(C + 1);
+    cout << nextChar << endl;
     return 0;
 }
