@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    char C;
-    cin >> C;
-    char nextChar = (C == 'z') ? 'a' : C + 1;
-    cout << nextChar << endl;
+    double X, P;
+    cin >> X >> P;
+    double originalPrice = P / (1 - X / 100);
+    cout << fixed << setprecision(2) << originalPrice << endl;
+    return 0;
 }
-
