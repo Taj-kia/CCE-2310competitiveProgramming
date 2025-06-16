@@ -1,4 +1,8 @@
-
+// Problem Name : Lucky Array
+//Course Title : Competitive Programming Sessional
+//Course Code : CCE-2310
+//Course Teacher Name : Mirza Raquib
+//Date : 16/06/25
 #include<bits/stdc++.h>
 using namespace std;
  
