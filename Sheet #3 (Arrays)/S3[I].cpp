@@ -7,29 +7,31 @@
 using namespace std;
 int main()
 {
-    long long t, n;
-    cin>>t;
+    long long t;
+    cin >> t;
     while(t--)
-{
-    cin>>n;
-    long long a[n];
-     for(int i = 0; i < n; i++)
-      {
-        cin>>a[i];
-      }
-long long smallest_pair = a[0] + a[1] + 1-0;
-    for(int i = 0; i < n; i++)
+    {
+         long long n;
+         cin>>n;
+        long long a[n+1];
+        for(long long i = 1; i <= n; i++)
         {
-          for(int j = i + 1; j < n; j++)
+            cin >> a[i];
+        }
+         long long real_ans=10000000;
+     for(long long base = 1; base <= n-1; base++)
+        {
+            for(long long comp = base + 1; comp <= n; comp++)
             {
-              long long sum = a[i] + a[j] + j - i;
-              if(sum<smallest_pair)
+                long long ans = a[base] + a[comp] + comp - base;
+                if(ans < real_ans)
                 {
-                    smallest_pair=sum;
+                    real_ans = ans;
                 }
             }
         }
-        cout<<smallest_pair<<endl;
-}
+
+        cout << real_ans << endl;
+    }
     return 0;
 }
